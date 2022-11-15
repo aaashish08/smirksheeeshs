@@ -4,6 +4,8 @@
     --green:#0cc74e;
     --black:#1d0f2e;
     --light-color:#666;
+    --purple:#ecd4ff;
+    --mauve:#784b84;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
@@ -13,7 +15,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border:none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -34,7 +35,7 @@ section:nth-child(even){
 
 .sub-heading{
     text-align: center;
-    color:var(--green);
+    color:var(--mauve);
     font-size: 2rem;
     padding-top: 1rem;
 }
@@ -59,14 +60,14 @@ section:nth-child(even){
 }
 
 .btn:hover{
-    background: var(--green);
+    background: var(--mauve);
     letter-spacing: .1rem;
 }
 
 header{
     position: fixed;
     top:0; left: 0; right:0;
-    background: #fff;
+    background: white;
     padding:1rem 7%;
     display: flex;
     align-items: center;
@@ -82,20 +83,21 @@ header .logo{
 }
 
 header .logo i{
-    color:var(--green);
+    color:var(--mauve);
 }
 
 header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding:.5rem 1.5rem;
-    color:var(--light-color);
+    color:var(--mauve);
+    font-weight: bold;
 }
 
 header .navbar a.active,
 header .navbar a:hover{
     color:#fff;
-    background: var(--green);
+    background: var(--mauve);
 }
 
 header .icons i,
@@ -115,7 +117,7 @@ header .icons a{
 header .icons i:hover,
 header .icons a:hover{
     color:#fff;
-    background: var(--green);
+    background: var(--mauve);
     transform: rotate(360deg);
 }
 
@@ -162,7 +164,7 @@ header .icons #menu-bars{
 }
 
 #search-form label:hover{
-    color:var(--green);
+    color:var(--mauve);
 }
 
 #search-form #close{
@@ -190,11 +192,11 @@ header .icons #menu-bars{
 }
 
 .home .home-slider .slide .image img{
-    width: 100%;
+    width: 68%;
 }
 
 .home .home-slider .slide .content span{
-    color:var(--green);
+    color:var(--mauve);
     font-size: 2.5rem;
 }
 
@@ -204,23 +206,23 @@ header .icons #menu-bars{
 }
 
 .home .home-slider .slide .content p{
-    color:var(--light-color);
+    color:var(--black);
     font-size: 2.2rem;
     padding:.5rem 0;
     line-height: 1.5;
 }
 
 .swiper-pagination-bullet-active{
-    background:var(--green);
+    background:var(--mauve);
 }
 
-.dishes .box-container{
+.collection .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap:1.5rem;
 }
 
-.dishes .box-container .box{
+.collection .box-container .box{
     padding:2.5rem;
     background:#fff;
     border-radius: .5rem;
@@ -231,8 +233,8 @@ header .icons #menu-bars{
     text-align: center;
 }
 
-.dishes .box-container .box .fa-heart,
-.dishes .box-container .box .fa-eye{
+.collection .box-container .box .fa-heart,
+.collection .box-container .box .fa-eye{
     position: absolute;
     top:1.5rem;
     background:#eee;
@@ -244,49 +246,49 @@ header .icons #menu-bars{
     color:var(--black);
 }
 
-.dishes .box-container .box .fa-heart:hover,
-.dishes .box-container .box .fa-eye:hover{
-    background: var(--green);
+.collection .box-container .box .fa-heart:hover,
+.collection .box-container .box .fa-eye:hover{
+    background: var(--mauve);
     color:#fff;
 }
 
-.dishes .box-container .box .fa-heart{
+.collection .box-container .box .fa-heart{
     right:-15rem;
 }
 
-.dishes .box-container .box .fa-eye{
+.collection .box-container .box .fa-eye{
     left:-15rem;
 }
 
-.dishes .box-container .box:hover .fa-heart{
+.collection .box-container .box:hover .fa-heart{
     right:1.5rem;
 }
 
-.dishes .box-container .box:hover .fa-eye{
+.collection .box-container .box:hover .fa-eye{
     left:1.5rem;
 }
 
-.dishes .box-container .box img{
+.collection .box-container .box img{
     height:17rem;
     margin:1rem 0;
 }
 
-.dishes .box-container .box h3{
+.collection .box-container .box h3{
     color:var(--black);
     font-size: 2.5rem;
 }
 
-.dishes .box-container .box .stars{
+.collection .box-container .box .stars{
     padding:1rem 0;
 }
 
-.dishes .box-container .box .stars i{
+.collection .box-container .box .stars i{
     font-size: 1.7rem;
-    color:var(--green);
+    color:var(--mauve);
 }
 
-.dishes .box-container .box span{
-    color:var(--green);
+.collection .box-container .box span{
+    color:var(--mauve);
     font-weight: bolder;
     margin-right: 1rem;
     font-size: 2.5rem;
@@ -346,7 +348,7 @@ header .icons #menu-bars{
 
 .about .row .content .icons-container .icons i{
     font-size: 2.5rem;
-    color:var(--green);
+    color:var(--mauve);
 }
 
 .about .row .content .icons-container .icons span{
@@ -396,7 +398,7 @@ header .icons #menu-bars{
 }
 
 .menu .box-container .box .image .fa-heart:hover{
-    background-color: var(--green);
+    background-color: var(--mauve);
     color:#fff;
 }
 
@@ -411,7 +413,7 @@ header .icons #menu-bars{
 
 .menu .box-container .box .content .stars i{
    font-size: 1.7rem;
-   color:var(--green);
+   color:var(--mauve);
 }
 
 .menu .box-container .box .content h3{
@@ -427,7 +429,7 @@ header .icons #menu-bars{
 }
 
 .menu .box-container .box .content .price{
-    color:var(--green);
+    color:var(--mauve);
     margin-left: 1rem;
     font-size: 2.5rem;
 }
@@ -469,7 +471,7 @@ header .icons #menu-bars{
 
 .review .slide .user i{
     font-size: 1.3rem;
-    color:var(--green);
+    color:var(--mauve);
 }
 
 .review .slide p{
@@ -519,7 +521,7 @@ header .icons #menu-bars{
 
 .order form .inputBox .input input:focus,
 .order form .inputBox .input textarea:focus{
-    border:.1rem solid var(--green);
+    border:.1rem solid var(--mauve);
 }
 
 .order form .inputBox .input textarea{
@@ -551,7 +553,7 @@ header .icons #menu-bars{
 }
 
 .footer .box-container .box a:hover{
-    color:var(--green);
+    color:var(--mauve);
     text-decoration: underline;
 }
 
@@ -566,7 +568,7 @@ header .icons #menu-bars{
 }
 
 .footer .credit span{
-    color:var(--green);
+    color:var(--mauve);
 }
 
 .loader-container{
@@ -688,7 +690,7 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
-    .dishes .box-container .box img{
+    .collection .box-container .box img{
         height:auto;
         width: 100%;
     }
